@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		048135FD28BA8E400006AB63 /* ListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048135FC28BA8E3F0006AB63 /* ListModel.swift */; };
 		04819A3928BA7E3300F57982 /* AppleMusicSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04819A3828BA7E3300F57982 /* AppleMusicSwiftUIApp.swift */; };
 		04819A3B28BA7E3300F57982 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04819A3A28BA7E3300F57982 /* LibraryView.swift */; };
 		04819A3D28BA7E3500F57982 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04819A3C28BA7E3500F57982 /* Assets.xcassets */; };
@@ -14,10 +15,11 @@
 		04819A4B28BA7F8B00F57982 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04819A4A28BA7F8B00F57982 /* TabBarView.swift */; };
 		04819A4E28BA805500F57982 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04819A4D28BA805500F57982 /* ListView.swift */; };
 		04819A5028BA80A400F57982 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04819A4F28BA80A400F57982 /* PlayerView.swift */; };
-		04819A5228BA80C200F57982 /* AssemblyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04819A5128BA80C200F57982 /* AssemblyView.swift */; };
+		04DDF9CF28BB57CF00F81A86 /* MediaRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DDF9CE28BB57CF00F81A86 /* MediaRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		048135FC28BA8E3F0006AB63 /* ListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModel.swift; sourceTree = "<group>"; };
 		04819A3528BA7E3300F57982 /* AppleMusicSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleMusicSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04819A3828BA7E3300F57982 /* AppleMusicSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusicSwiftUIApp.swift; sourceTree = "<group>"; };
 		04819A3A28BA7E3300F57982 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
@@ -27,7 +29,7 @@
 		04819A4C28BA7FCA00F57982 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04819A4D28BA805500F57982 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		04819A4F28BA80A400F57982 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
-		04819A5128BA80C200F57982 /* AssemblyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblyView.swift; sourceTree = "<group>"; };
+		04DDF9CE28BB57CF00F81A86 /* MediaRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		048135FB28BA8E250006AB63 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				048135FC28BA8E3F0006AB63 /* ListModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		04819A2C28BA7E3300F57982 = {
 			isa = PBXGroup;
 			children = (
@@ -85,7 +95,6 @@
 		04819A4928BA7F0A00F57982 /* TabBarModule */ = {
 			isa = PBXGroup;
 			children = (
-				04819A5128BA80C200F57982 /* AssemblyView.swift */,
 				04819A4A28BA7F8B00F57982 /* TabBarView.swift */,
 				04819A4F28BA80A400F57982 /* PlayerView.swift */,
 			);
@@ -103,7 +112,9 @@
 		04819A5428BA85A900F57982 /* ListModule */ = {
 			isa = PBXGroup;
 			children = (
+				048135FB28BA8E250006AB63 /* Model */,
 				04819A4D28BA805500F57982 /* ListView.swift */,
+				04DDF9CE28BB57CF00F81A86 /* MediaRowView.swift */,
 			);
 			path = ListModule;
 			sourceTree = "<group>";
@@ -215,11 +226,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04DDF9CF28BB57CF00F81A86 /* MediaRowView.swift in Sources */,
 				04819A4E28BA805500F57982 /* ListView.swift in Sources */,
 				04819A3B28BA7E3300F57982 /* LibraryView.swift in Sources */,
 				04819A4B28BA7F8B00F57982 /* TabBarView.swift in Sources */,
 				04819A5028BA80A400F57982 /* PlayerView.swift in Sources */,
-				04819A5228BA80C200F57982 /* AssemblyView.swift in Sources */,
+				048135FD28BA8E400006AB63 /* ListModel.swift in Sources */,
 				04819A3928BA7E3300F57982 /* AppleMusicSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
