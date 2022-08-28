@@ -9,16 +9,16 @@ import SwiftUI
 
 struct TabBarView: View {
     var body: some View {
+        ZStack {
             TabView {
                 NavigationView {
-                LibraryView()
+                    LibraryView()
                 }
-                    .tabItem {
-                        Text("Медиатека")
-                        Image("note")
-                            .renderingMode(.template)
-                    }
-                
+                .tabItem {
+                    Text("Медиатека")
+                    Image("note")
+                        .renderingMode(.template)
+                }
                 Text("Радио")
                     .tabItem {
                         Text("Радио")
@@ -26,7 +26,6 @@ struct TabBarView: View {
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                     }
-                
                 Text("Поиск")
                     .tabItem {
                         Text("Поиск")
@@ -36,6 +35,9 @@ struct TabBarView: View {
                     }
             }
             .accentColor(.red)
+            PlayerView()
+                .offset(y: -33)
+        }
     }
 }
 
@@ -44,3 +46,4 @@ struct TabView_Previews: PreviewProvider {
         TabBarView()
     }
 }
+
