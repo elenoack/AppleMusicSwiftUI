@@ -16,7 +16,6 @@ struct MediaRowView: View {
                 .scaledToFit()
                 .frame(width: 29, height: 23)
                 .foregroundColor(.red)
-            
             Text(media.name)
                 .font(.title3)
                 .padding([.top, .bottom], 8)
