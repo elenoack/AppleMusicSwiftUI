@@ -10,6 +10,7 @@ import SwiftUI
 struct ListView: View {
     @State private var mediaLibrary = ListModel.mocks
     @State private var selectedItems : Set<String> = Set<String>()
+    @Environment(\.dismiss) var dismiss
     
     var body: some View {
         List(selection: $selectedItems) {
@@ -23,20 +24,19 @@ struct ListView: View {
         .environment(\.editMode, .constant(.active))
         .listStyle(.plain)
         .navigationTitle("Медиатека")
-        .navigationBarItems(
-            trailing: NavigationLink(
-                destination:
-                    LibraryView(),
-                label: {
-                    Text("Готово")
-                        .foregroundColor(.red)
-                }))
+        .navigationBarItems(trailing:
+                                Button(action: {
+            dismiss()
+        }) {
+            Text("Готово")
+                .foregroundColor(.red)
+        })
         .navigationBarBackButtonHidden(true)
     }
-
-func move(from source: IndexSet, to destination: Int) {
-    mediaLibrary.move(fromOffsets: source, toOffset: destination)
-   }
+    
+    func move(from source: IndexSet, to destination: Int) {
+        mediaLibrary.move(fromOffsets: source, toOffset: destination)
+    }
 }
 
 struct ListView_Previews: PreviewProvider {

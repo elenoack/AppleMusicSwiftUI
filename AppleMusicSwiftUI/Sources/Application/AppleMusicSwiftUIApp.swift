@@ -14,7 +14,7 @@ struct AppleMusicSwiftUIApp: App {
         }
     var body: some Scene {
         WindowGroup {
-            TabBarView()
+            MainView()
         }
     }
 }

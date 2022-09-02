@@ -1,5 +1,5 @@
 //
-//  TabBarView.swift
+//  MainView.swift
 //  AppleMusicSwiftUI
 //
 //  Created by Elena Noack on 27.08.22.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TabBarView: View {
+struct  MainView: View {
     var body: some View {
         ZStack {
             TabView {
@@ -43,7 +43,7 @@ struct TabBarView: View {
 
 struct TabView_Previews: PreviewProvider {
     static var previews: some View {
-        TabBarView()
+        MainView()
     }
 }
 
