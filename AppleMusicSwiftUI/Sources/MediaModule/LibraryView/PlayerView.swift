@@ -15,9 +15,7 @@ struct PlayerView: View {
                 HStack {
                     ZStack {
                         Rectangle()
-                            .foregroundColor(Color(red: 0.926,
-                                                   green: 0.922,
-                                                   blue: 0.913))
+                            .foregroundColor(Color ("playerColor"))
                             .frame(width: 60, height: 60)
                             .cornerRadius(9)
                             .shadow(radius: 6)
@@ -40,9 +38,7 @@ struct PlayerView: View {
                     }.buttonStyle(PlainButtonStyle())
                         .padding()
                 }
-                .background(Color(red: 0.949,
-                                  green: 0.949,
-                                  blue: 0.969))
+                .background(Color ("grayBackground"))
             }
             .overlay(Divider(), alignment: .bottom)
             .padding(.bottom)
