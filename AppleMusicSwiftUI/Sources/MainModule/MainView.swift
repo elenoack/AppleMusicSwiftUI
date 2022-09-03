@@ -19,7 +19,9 @@ struct  MainView: View {
                     Image("note")
                         .renderingMode(.template)
                 }
-                Text("Радио")
+                NavigationView {
+                RadioView()
+                }
                     .tabItem {
                         Text("Радио")
                         Image(systemName:"dot.radiowaves.left.and.right")
