@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040F287028C206F400DC0EE1 /* RadioSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F286F28C206F400DC0EE1 /* RadioSectionView.swift */; };
+		040F287328C20C7100DC0EE1 /* RadioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F287228C20C7100DC0EE1 /* RadioModel.swift */; };
+		040F287528C2199900DC0EE1 /* RadioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F287428C2199900DC0EE1 /* RadioView.swift */; };
+		040F287728C2254B00DC0EE1 /* StationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F287628C2254B00DC0EE1 /* StationView.swift */; };
+		040F287928C22E0E00DC0EE1 /* StationSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F287828C22E0E00DC0EE1 /* StationSectionView.swift */; };
 		048135FD28BA8E400006AB63 /* ListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048135FC28BA8E3F0006AB63 /* ListModel.swift */; };
 		04819A3928BA7E3300F57982 /* AppleMusicSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04819A3828BA7E3300F57982 /* AppleMusicSwiftUIApp.swift */; };
 		04819A3B28BA7E3300F57982 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04819A3A28BA7E3300F57982 /* LibraryView.swift */; };
@@ -19,6 +24,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		040F286F28C206F400DC0EE1 /* RadioSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioSectionView.swift; sourceTree = "<group>"; };
+		040F287228C20C7100DC0EE1 /* RadioModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioModel.swift; sourceTree = "<group>"; };
+		040F287428C2199900DC0EE1 /* RadioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioView.swift; sourceTree = "<group>"; };
+		040F287628C2254B00DC0EE1 /* StationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationView.swift; sourceTree = "<group>"; };
+		040F287828C22E0E00DC0EE1 /* StationSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationSectionView.swift; sourceTree = "<group>"; };
 		048135FC28BA8E3F0006AB63 /* ListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModel.swift; sourceTree = "<group>"; };
 		04819A3528BA7E3300F57982 /* AppleMusicSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleMusicSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04819A3828BA7E3300F57982 /* AppleMusicSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusicSwiftUIApp.swift; sourceTree = "<group>"; };
@@ -63,8 +73,21 @@
 		040F286E28C1FB6000DC0EE1 /* RadioModule */ = {
 			isa = PBXGroup;
 			children = (
+				040F287128C20C5300DC0EE1 /* Model */,
+				040F287428C2199900DC0EE1 /* RadioView.swift */,
+				040F286F28C206F400DC0EE1 /* RadioSectionView.swift */,
+				040F287628C2254B00DC0EE1 /* StationView.swift */,
+				040F287828C22E0E00DC0EE1 /* StationSectionView.swift */,
 			);
 			path = RadioModule;
+			sourceTree = "<group>";
+		};
+		040F287128C20C5300DC0EE1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				040F287228C20C7100DC0EE1 /* RadioModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		048135FB28BA8E250006AB63 /* Model */ = {
@@ -242,8 +265,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				040F287028C206F400DC0EE1 /* RadioSectionView.swift in Sources */,
 				04DDF9CF28BB57CF00F81A86 /* MediaRowView.swift in Sources */,
+				040F287328C20C7100DC0EE1 /* RadioModel.swift in Sources */,
 				04819A4E28BA805500F57982 /* ListView.swift in Sources */,
+				040F287528C2199900DC0EE1 /* RadioView.swift in Sources */,
+				040F287928C22E0E00DC0EE1 /* StationSectionView.swift in Sources */,
+				040F287728C2254B00DC0EE1 /* StationView.swift in Sources */,
 				04819A3B28BA7E3300F57982 /* LibraryView.swift in Sources */,
 				04819A4B28BA7F8B00F57982 /* MainView.swift in Sources */,
 				04819A5028BA80A400F57982 /* PlayerView.swift in Sources */,
