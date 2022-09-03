@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ListModel: Identifiable, Hashable  {
+struct ListModel: Identifiable, Hashable {
     var id = UUID()
     let name: String
     let icon: String
