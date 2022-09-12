@@ -13,7 +13,7 @@ struct HorizontalCellView: View {
     var album: AlbumDataModel
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 0.0) {
+        VStack(alignment: .leading, spacing: 2.0) {
                 Image(album.image)
                     .resizable()
                     .scaledToFit()

@@ -17,8 +17,8 @@ struct HorizontalListCellView: View {
                 .resizable()
                 .scaledToFit()
                 .frame(width: 46, height: 46)
-                .padding(.top, 5)
                 .cornerRadius(5)
+                .padding(.top, 5)
             VStack {
                 Divider()
                 HStack {

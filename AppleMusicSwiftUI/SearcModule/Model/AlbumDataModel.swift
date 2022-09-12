@@ -32,5 +32,19 @@ struct AlbumDataModel: Hashable, Identifiable {
         AlbumDataModel(author: "Chaёl",
                        song: "Don't speak",
                        image: "chaёl"),
+        AlbumDataModel(author: "Леша Свик",
+                       song: "Танцевали до утра",
+                       image: "svik"),
+        AlbumDataModel(author: "ANNA ASTI",
+                       song: "Феникс",
+                       image: "asti"),
+        AlbumDataModel(author: "Akmal'",
+                       song: "По полюшку",
+                       image: "akmal"),
+        AlbumDataModel(author: "Time Today",
+                       song: "Moneybagg Yo",
+                       image: "moneybagg"),
     ]
 }
+
+
