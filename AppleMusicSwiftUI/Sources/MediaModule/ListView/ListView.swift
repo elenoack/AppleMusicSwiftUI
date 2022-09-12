@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct ListView: View {
-    @State private var mediaLibrary = ListModel.mocks
+    
+    @EnvironmentObject var modelData: ModelData
     @State private var selectedItems : Set<String> = Set<String>()
     @Environment(\.dismiss) var dismiss
     
     var body: some View {
         List(selection: $selectedItems) {
             Section() {
-                ForEach(mediaLibrary, id:\.self) { media in
+                ForEach(modelData.media, id:\.self) { media in
                     MediaRowView(media: media)
                         .listRowSeparator(.visible)
                 }.onMove(perform: move)
@@ -35,12 +36,13 @@ struct ListView: View {
     }
     
     func move(from source: IndexSet, to destination: Int) {
-        mediaLibrary.move(fromOffsets: source, toOffset: destination)
+        modelData.media.move(fromOffsets: source, toOffset: destination)
     }
 }
 
 struct ListView_Previews: PreviewProvider {
     static var previews: some View {
         ListView()
+            .environmentObject(ModelData())
     }
 }

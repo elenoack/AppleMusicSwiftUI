@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct StationSectionView: View {
+    
     var station: RadioModel
+    
     var body: some View {
         HStack() {
             Image(station.stationImageName)

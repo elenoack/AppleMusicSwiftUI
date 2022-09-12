@@ -20,21 +20,23 @@ struct  MainView: View {
                         .renderingMode(.template)
                 }
                 NavigationView {
-                RadioView()
+                    RadioView()
                 }
-                    .tabItem {
-                        Text("Радио")
-                        Image(systemName:"dot.radiowaves.left.and.right")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                    }
-                Text("Поиск")
-                    .tabItem {
-                        Text("Поиск")
-                        Image(systemName:"magnifyingglass")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                    }
+                .tabItem {
+                    Text("Радио")
+                    Image(systemName:"dot.radiowaves.left.and.right")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                }
+                NavigationView {
+                    SearchView()
+                }
+                .tabItem {
+                    Text("Поиск")
+                    Image(systemName:"magnifyingglass")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                }
             }
             .accentColor(.red)
             PlayerView()

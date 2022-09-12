@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct StationView: View {
-    @State private var stationLibrary = RadioModel.mocks
+    
+    @EnvironmentObject var modelData: ModelData
     let columns = [GridItem(.flexible())]
+    
     var body: some View {
         VStack(alignment: .leading) {
             Divider()
@@ -17,7 +19,7 @@ struct StationView: View {
                 .font(.title2)
                 .fontWeight(.bold)
             LazyVGrid(columns: columns) {
-                ForEach(stationLibrary) { station in
+                ForEach(modelData.radio) { station in
                     StationSectionView(station: station)
                         .padding(.bottom, 2)
                 }
@@ -32,5 +34,6 @@ struct StationView: View {
 struct StationView_Previews: PreviewProvider {
     static var previews: some View {
         StationView()
+            .environmentObject(ModelData())
     }
 }
