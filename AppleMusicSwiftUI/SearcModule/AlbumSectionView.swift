@@ -1,34 +1,33 @@
 //
-//  StationSectionView.swift
+//  AlbumSectionView.swift
 //  AppleMusicSwiftUI
 //
-//  Created by Elena Noack on 02.09.22.
+//  Created by Elena Noack on 09.09.22.
 //
 
 import SwiftUI
 
-struct StationSectionView: View {
+struct AlbumSectionView: View {
     
-    var station: RadioModel
+    var album: AlbumDataModel
     
     var body: some View {
         HStack() {
-            Image(station.stationImageName)
+            Image(album.image)
                 .resizable()
                 .scaledToFit()
-                .frame(width: 100, height: 100)
-                .cornerRadius(10)
+                .frame(width: 75, height: 75)
+                .cornerRadius(37.5)
             VStack(alignment: .leading) {
                 Rectangle()
                     .foregroundColor(.clear)
-                Text(station.stationDescription)
+                Text(album.author)
                     .foregroundColor(.primary)
-                Text("Станция Apple Music")
+                Text(album.song)
                     .foregroundColor(.secondary)
                     .font(.caption)
                 Rectangle()
                     .foregroundColor(.clear)
-                Divider()
             }
             .frame(height: 100)
             Spacer()
@@ -36,8 +35,8 @@ struct StationSectionView: View {
     }
 }
 
-struct StationSectionView_Previews: PreviewProvider {
+struct AlbumSectionView_Previews: PreviewProvider {
     static var previews: some View {
-        StationSectionView(station: RadioModel.mocks[0])
+        AlbumSectionView(album: AlbumDataModel.mocks[0])
     }
 }

@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct RadioSectionView: View {
+    
     let radio: RadioModel
+    
     var body: some View {
         VStack(alignment: .leading) {
             Divider()
@@ -33,10 +35,12 @@ struct RadioSectionView: View {
                     .foregroundColor(.white)
                     .frame(maxWidth: .infinity, alignment: .bottomLeading)
                     .background(
-                        LinearGradient(gradient: Gradient(colors: [.clear, .black]), startPoint: .top, endPoint: .bottom)
-                            .opacity(0.5)
+                        LinearGradient(gradient: Gradient(colors: [.clear, .black]),
+                                       startPoint: .top,
+                                       endPoint: .bottom)
+                        .opacity(0.5)
                     )
-                                    .shadow(color: .black, radius: 8, x: 0, y: -5)
+                    .shadow(color: .black, radius: 8, x: 0, y: -5)
             }
             .cornerRadius(12)
             Spacer()
