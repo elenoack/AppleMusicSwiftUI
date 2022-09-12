@@ -12,14 +12,15 @@ struct HorizontalSectionView: View {
     @EnvironmentObject var modelData: ModelData
     @State var title: String
     @State var hasTwoRows = false
+    var geometry: GeometryProxy
     
     let rows = [
-        GridItem(.flexible(minimum: 220, maximum: 220)),
+        GridItem(.fixed(230))
     ]
     
     let doubleRows = [
-        GridItem(.flexible(minimum: 220, maximum: 220)),
-        GridItem(.flexible(minimum: 220, maximum: 220))
+        GridItem(.fixed(230)),
+        GridItem(.fixed(230))
     ]
     
     var body: some View {
@@ -29,6 +30,7 @@ struct HorizontalSectionView: View {
                 LazyHGrid(rows: hasTwoRows ? doubleRows : rows) {
                     ForEach(modelData.albums) { album in
                         HorizontalCellView(album: album)
+                            .frame(width: geometry.size.width / 2.15)
                     }
                 }
                 .padding([.horizontal])
@@ -41,7 +43,7 @@ struct HorizontalSectionView: View {
 struct HorizontalSectionView_Previews: PreviewProvider {
     static var previews: some View {
         GeometryReader { geometry in
-            HorizontalSectionView(title: "Пространственное аудио")
+            HorizontalSectionView(title: "Пространственное аудио", geometry: geometry)
                 .environmentObject(ModelData())
         }
     }

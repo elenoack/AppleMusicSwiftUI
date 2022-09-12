@@ -45,5 +45,6 @@ struct HorizontalListCellView: View {
 struct HorizontalListCellView_Previews: PreviewProvider {
     static var previews: some View {
         HorizontalListCellView(album: AlbumDataModel.mocks[0])
+            .previewInterfaceOrientation(.landscapeRight)
     }
 }

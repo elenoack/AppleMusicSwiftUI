@@ -15,7 +15,7 @@ struct AlbumDataModel: Hashable, Identifiable {
     
     static var mocks: [AlbumDataModel] = [
         AlbumDataModel(author: "Fall Out Boy",
-                       song: "This Ain't a Scene",
+                       song: "This Ain't a Scene, It's an Arms",
                        image: "fallOutBoy"),
         AlbumDataModel(author: "Iggy Pop",
                        song: "The Passenger",

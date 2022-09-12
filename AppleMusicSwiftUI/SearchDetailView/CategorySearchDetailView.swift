@@ -17,9 +17,9 @@ struct CategorySearchDetailView: View {
                     GeometryReader { geometry in
                         ScrollView(.vertical, showsIndicators: true) {
                             FavoritePlayList(geometry: geometry)
-                            HorizontalSectionView(title: "Популярные плейлисты", hasTwoRows: true)
+                            HorizontalSectionView(title: "Популярные плейлисты", hasTwoRows: true, geometry: geometry)
                             HorizontalListView(geometry: geometry, title: "Лучшие новые треки")
-                            HorizontalSectionView(title: "Пространственное аудио")
+                            HorizontalSectionView(title: "Пространственное аудио", geometry: geometry)
                         }
                     }
                 }

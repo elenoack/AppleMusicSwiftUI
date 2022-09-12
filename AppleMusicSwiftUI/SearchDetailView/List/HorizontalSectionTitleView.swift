@@ -15,16 +15,12 @@ struct HorizontalSectionTitleView: View {
             VStack{
                 Divider()
                     .padding([.horizontal])
-
                 HStack {
                     Text(title)
                         .font(.title2)
                         .fontWeight(.bold)
-                    
                     Spacer()
-                    
                     Button("См. все") {
-                      
                     }
                     .foregroundColor(.red)
                 }
