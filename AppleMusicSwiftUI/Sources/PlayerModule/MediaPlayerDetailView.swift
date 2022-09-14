@@ -45,8 +45,6 @@ struct MediaPlayerDetailView: View {
                 startPoint: .bottom,
                 endPoint: .top))
         }
-        .padding(.bottom)
-        .background(.black)
         .gesture(
             DragGesture().onEnded { value in
                 if value.location.y - value.startLocation.y > 100 {

@@ -118,11 +118,9 @@
 		040F286E28C1FB6000DC0EE1 /* RadioModule */ = {
 			isa = PBXGroup;
 			children = (
-				040F287128C20C5300DC0EE1 /* Model */,
 				040F287428C2199900DC0EE1 /* RadioView.swift */,
-				040F286F28C206F400DC0EE1 /* RadioSectionView.swift */,
-				040F287628C2254B00DC0EE1 /* StationView.swift */,
-				040F287828C22E0E00DC0EE1 /* StationSectionView.swift */,
+				040F287128C20C5300DC0EE1 /* Model */,
+				045CEEB028D1BA1C0013052F /*  Helpers */,
 			);
 			path = RadioModule;
 			sourceTree = "<group>";
@@ -138,11 +136,8 @@
 		04539EDC28CB72A000D46156 /* SearcModule */ = {
 			isa = PBXGroup;
 			children = (
-				04539EE428CB760A00D46156 /* Model */,
+				045CEEAF28D1B78B0013052F /* SearchView */,
 				04539EE728CB878E00D46156 /* SearchDetailView */,
-				04539EE028CB735500D46156 /* SearchView.swift */,
-				04539EE228CB74E900D46156 /* CategorySearchView.swift */,
-				0448E7C528CBC4260066F0AE /* AlbumSectionView.swift */,
 			);
 			path = SearcModule;
 			sourceTree = "<group>";
@@ -159,11 +154,9 @@
 		04539EE728CB878E00D46156 /* SearchDetailView */ = {
 			isa = PBXGroup;
 			children = (
-				04539EEF28CB917D00D46156 /* Model */,
 				04539EE828CB87A700D46156 /* CategorySearchDetailView.swift */,
-				04539EEA28CB88B800D46156 /* FavoritePlayList.swift */,
-				04539EF228CB932500D46156 /* FavoritePlayListSection.swift */,
-				0496338F28CC6C3A00EBE357 /* List */,
+				04539EEF28CB917D00D46156 /* Model */,
+				0496338F28CC6C3A00EBE357 /* Helpers */,
 			);
 			path = SearchDetailView;
 			sourceTree = "<group>";
@@ -182,6 +175,35 @@
 				04539EF028CB918900D46156 /* AlbumCategoryModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		045CEEAF28D1B78B0013052F /* SearchView */ = {
+			isa = PBXGroup;
+			children = (
+				04539EE028CB735500D46156 /* SearchView.swift */,
+				04539EE428CB760A00D46156 /* Model */,
+				045CEEB128D1BA500013052F /* Helpers */,
+			);
+			path = SearchView;
+			sourceTree = "<group>";
+		};
+		045CEEB028D1BA1C0013052F /*  Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				040F286F28C206F400DC0EE1 /* RadioSectionView.swift */,
+				040F287628C2254B00DC0EE1 /* StationView.swift */,
+				040F287828C22E0E00DC0EE1 /* StationSectionView.swift */,
+			);
+			path = " Helpers";
+			sourceTree = "<group>";
+		};
+		045CEEB128D1BA500013052F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				04539EE228CB74E900D46156 /* CategorySearchView.swift */,
+				0448E7C528CBC4260066F0AE /* AlbumSectionView.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		048135FB28BA8E250006AB63 /* Model */ = {
@@ -245,9 +267,9 @@
 		04819A5428BA85A900F57982 /* ListView */ = {
 			isa = PBXGroup;
 			children = (
-				048135FB28BA8E250006AB63 /* Model */,
 				04819A4D28BA805500F57982 /* ListView.swift */,
 				04DDF9CE28BB57CF00F81A86 /* MediaRowView.swift */,
+				048135FB28BA8E250006AB63 /* Model */,
 			);
 			path = ListView;
 			sourceTree = "<group>";
@@ -292,16 +314,18 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		0496338F28CC6C3A00EBE357 /* List */ = {
+		0496338F28CC6C3A00EBE357 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				04539EEA28CB88B800D46156 /* FavoritePlayList.swift */,
+				04539EF228CB932500D46156 /* FavoritePlayListSection.swift */,
 				0496338B28CC6A5E00EBE357 /* HorizontalSectionTitleView.swift */,
 				0496338928CC68EE00EBE357 /* HorizontalListCellView.swift */,
 				0496339228CC75B400EBE357 /* HorizontalListView.swift */,
 				0496339628CC763C00EBE357 /* HorizontalSectionView.swift */,
 				0496339428CC75E400EBE357 /* HorizontalCellView.swift */,
 			);
-			path = List;
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		04B9B43128CF327F00F5A461 /* PlayerModule */ = {

@@ -11,6 +11,7 @@ struct PlayerView: View {
     
     @State private var isShowingDetailsPlayer = false
     @State private var track = AlbumDataModel.mocks.randomElement()
+    @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
         VStack {
@@ -32,21 +33,21 @@ struct PlayerView: View {
                             .scaledToFit()
                             .foregroundColor(Color.gray)
                     }
-                    Text(track?.song ?? "Не исполняется").foregroundColor(.black)
+                    Text(track?.song ?? "Не исполняется").foregroundColor(colorScheme == .dark ? Color.white : Color.black)
                     Spacer()
                     Button(action: {}) {
                         Image(systemName: "play.fill")
                             .font(.title3)
-                            .foregroundColor(.black)
+                            .foregroundColor(colorScheme == .dark ? (Color ("grayBackground")) : Color.black)
                     }.buttonStyle(PlainButtonStyle())
                     Button(action: {}) {
                         Image(systemName: "forward.fill")
                             .font(.title3)
-                            .foregroundColor(.black)
+                            .foregroundColor(colorScheme == .dark ? (Color ("grayBackground")) : Color.black)
                     }.buttonStyle(PlainButtonStyle())
                         .padding()
                 }
-                .background(Color ("grayBackground"))
+                .background(colorScheme == .light ? (Color ("grayBackground")) : (Color ("grayDarkMode")))
             }
             .overlay(Divider(), alignment: .bottom)
             .padding(.bottom)
