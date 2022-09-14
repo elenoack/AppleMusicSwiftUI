@@ -133,13 +133,13 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		04539EDC28CB72A000D46156 /* SearcModule */ = {
+		04539EDC28CB72A000D46156 /* SearchModule */ = {
 			isa = PBXGroup;
 			children = (
 				045CEEAF28D1B78B0013052F /* SearchView */,
 				04539EE728CB878E00D46156 /* SearchDetailView */,
 			);
-			path = SearcModule;
+			path = SearchModule;
 			sourceTree = "<group>";
 		};
 		04539EE428CB760A00D46156 /* Model */ = {
@@ -161,12 +161,12 @@
 			path = SearchDetailView;
 			sourceTree = "<group>";
 		};
-		04539EEC28CB907F00D46156 /* Model */ = {
+		04539EEC28CB907F00D46156 /* MainModel */ = {
 			isa = PBXGroup;
 			children = (
 				04539EED28CB909E00D46156 /* ModelData.swift */,
 			);
-			path = Model;
+			path = MainModel;
 			sourceTree = "<group>";
 		};
 		04539EEF28CB917D00D46156 /* Model */ = {
@@ -288,12 +288,12 @@
 			isa = PBXGroup;
 			children = (
 				04819A4628BA7EF900F57982 /* Application */,
-				04539EEC28CB907F00D46156 /* Model */,
+				04539EEC28CB907F00D46156 /* MainModel */,
 				040F286C28C1FA3B00DC0EE1 /* MainModule */,
 				04B9B43128CF327F00F5A461 /* PlayerModule */,
 				04819A5328BA857A00F57982 /* MediaModule */,
 				040F286E28C1FB6000DC0EE1 /* RadioModule */,
-				04539EDC28CB72A000D46156 /* SearcModule */,
+				04539EDC28CB72A000D46156 /* SearchModule */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
