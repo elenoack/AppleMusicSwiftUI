@@ -12,39 +12,51 @@ struct AlbumDataModel: Hashable, Identifiable {
     var author: String
     var song: String
     var image: String
+    var duration: Double
     
     static var mocks: [AlbumDataModel] = [
         AlbumDataModel(author: "Fall Out Boy",
                        song: "This Ain't a Scene, It's an Arms",
-                       image: "fallOutBoy"),
+                       image: "fallOutBoy",
+                       duration: 186.0),
         AlbumDataModel(author: "Iggy Pop",
                        song: "The Passenger",
-                       image: "iggyPop"),
+                       image: "iggyPop",
+                       duration: 210.0),
         AlbumDataModel(author: "Пилот",
                        song: "Шнурок",
-                       image: "пилот"),
+                       image: "пилот",
+                       duration: 240.0),
         AlbumDataModel(author: "Земфира",
                        song: "Прости меня моя любовь",
-                       image: "земфира"),
+                       image: "земфира",
+                       duration: 284.0),
         AlbumDataModel(author: "Иоганн Себастьян Бах",
                        song: "Sonata in E Minor BWV 1034: Allegro",
-                       image: "bach"),
+                       image: "bach",
+                       duration: 186.0),
         AlbumDataModel(author: "Chaёl",
                        song: "Don't speak",
-                       image: "chaёl"),
+                       image: "chaёl",
+                       duration: 210.0),
         AlbumDataModel(author: "Леша Свик",
                        song: "Танцевали до утра",
-                       image: "svik"),
+                       image: "svik",
+                       duration: 240.0),
         AlbumDataModel(author: "ANNA ASTI",
                        song: "Феникс",
-                       image: "asti"),
+                       image: "asti",
+                       duration: 284.0),
         AlbumDataModel(author: "Akmal'",
                        song: "По полюшку",
-                       image: "akmal"),
-        AlbumDataModel(author: "Time Today",
-                       song: "Moneybagg Yo",
-                       image: "moneybagg"),
+                       image: "akmal",
+                       duration: 186.0),
+        AlbumDataModel(author: "Moneybagg Yo",
+                       song: "Time Today",
+                       image: "moneybagg",
+                       duration: 200.0),
     ]
 }
+
 
 
