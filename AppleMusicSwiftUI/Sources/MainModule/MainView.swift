@@ -37,6 +37,14 @@ struct  MainView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                 }
+        
+                    SearchUIKitView()
+                .tabItem {
+                    Text("Поиск UIKit")
+                    Image(systemName:"plus.magnifyingglass")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                }
             }
             .accentColor(.red)
             PlayerView()
