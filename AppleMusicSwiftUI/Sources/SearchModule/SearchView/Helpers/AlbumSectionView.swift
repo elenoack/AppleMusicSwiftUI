@@ -17,7 +17,7 @@ struct AlbumSectionView: View {
                 .resizable()
                 .scaledToFit()
                 .frame(width: 75, height: 75)
-                .cornerRadius(37.5)
+                .cornerRadius(8)
             VStack(alignment: .leading) {
                 Rectangle()
                     .foregroundColor(.clear)
@@ -30,6 +30,7 @@ struct AlbumSectionView: View {
                     .foregroundColor(.clear)
             }
             .frame(height: 100)
+            Image(systemName: "ellipsis")
             Spacer()
         }
     }

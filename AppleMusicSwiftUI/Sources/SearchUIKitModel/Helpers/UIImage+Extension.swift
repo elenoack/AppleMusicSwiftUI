@@ -16,5 +16,5 @@ extension UIImage {
         draw(in: rect)
         return UIGraphicsGetImageFromCurrentImageContext()!
     }
-
+    
 }

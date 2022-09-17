@@ -50,7 +50,6 @@ struct PlayerView: View {
                 .background(colorScheme == .light ? (Color ("grayBackground")) : (Color ("grayDarkMode")))
             }
             .overlay(Divider(), alignment: .bottom)
-            .padding(.bottom)
         }
         .onTapGesture {
             isShowingDetailsPlayer.toggle()
@@ -64,6 +63,5 @@ struct PlayerView: View {
 struct PlayerView_Previews: PreviewProvider {
     static var previews: some View {
         PlayerView()
-            .previewLayout(.fixed(width: 400.0, height: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/))
     }
 }

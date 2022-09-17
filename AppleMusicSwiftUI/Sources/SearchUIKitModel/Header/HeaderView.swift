@@ -22,7 +22,7 @@ class HeaderView: UICollectionReusableView {
         let lable = UILabel()
         lable.textAlignment = .left
         lable.font = .systemFont(ofSize: 22, weight: .bold)
-        lable.textColor = .black
+        lable.textColor = .label
         lable.text = "Поиск по категориям"
         return lable
     }()

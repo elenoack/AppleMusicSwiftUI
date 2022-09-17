@@ -27,6 +27,7 @@ struct RadioView: View {
                 StationView()
                     .padding(.horizontal, 8)
             }
+            PlayerView()
         }
         .navigationTitle("Радио")
         .navigationViewStyle(.stack)

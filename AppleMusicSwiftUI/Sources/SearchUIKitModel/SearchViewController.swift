@@ -5,7 +5,6 @@
 //  Created by Elena Noack on 15.09.22.
 //
 
-
 import UIKit
 import SwiftUI
 
@@ -46,8 +45,6 @@ class SearchViewController: UIHostingController<SearchView>, UICollectionViewDel
         navigationItem.searchController = searchView?.searchController
         navigationController?.navigationBar.isTranslucent = false
         navigationItem.hidesSearchBarWhenScrolling = false
-//        self.definesPresentationContext = true
-//        navigationController?.navigationBar.barTintColor = .clear
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.largeTitleDisplayMode = .always
         navigationItem.title = "Поиск"
@@ -113,7 +110,6 @@ extension SearchViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView,
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
         var configuration = cell.defaultContentConfiguration()
         let track = albumData[indexPath.row]
@@ -122,6 +118,9 @@ extension SearchViewController: UITableViewDataSource {
         configuration.text = track.author
         configuration.secondaryText = track.song
         configuration.secondaryTextProperties.color = .gray
+        cell.accessoryView = UIImageView(image: UIImage(systemName: "ellipsis"))
+        cell.accessoryView?.tintColor = .label
+        cell.backgroundColor = .clear
         cell.selectionStyle = .none
         cell.contentConfiguration = configuration
         return cell

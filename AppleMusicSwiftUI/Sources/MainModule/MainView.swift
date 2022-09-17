@@ -38,7 +38,7 @@ struct  MainView: View {
                         .aspectRatio(contentMode: .fit)
                 }
         
-                    SearchUIKitView()
+                MainSearchUIKitView()
                 .tabItem {
                     Text("Поиск UIKit")
                     Image(systemName:"plus.magnifyingglass")
@@ -47,8 +47,6 @@ struct  MainView: View {
                 }
             }
             .accentColor(.red)
-            PlayerView()
-                .offset(y: -33)
         }
     }
 }

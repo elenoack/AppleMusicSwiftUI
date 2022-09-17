@@ -14,7 +14,7 @@ struct TimeView: View {
     
     var body: some View {
         VStack {
-            Slider(value: $currentTime, in: 0...(duration.duration), step: 0.4)
+            Slider(value: $currentTime, in: 0...(duration.duration), step: 0.3)
                 .tint(.gray)
             HStack {
                 Text("\(formatTime(currentTime))")
