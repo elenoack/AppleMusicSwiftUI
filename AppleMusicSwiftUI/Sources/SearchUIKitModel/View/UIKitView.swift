@@ -109,7 +109,7 @@ class UIKitView: UIView {
             collectionView.bottomAnchor.constraint(equalTo: bottomAnchor),
             collectionView.trailingAnchor.constraint(equalTo: trailingAnchor),
             
-            tableView.topAnchor.constraint(equalTo: layoutMarginsGuide.topAnchor),
+            tableView.topAnchor.constraint(equalTo: topAnchor),
             tableView.leadingAnchor.constraint(equalTo: leadingAnchor),
             tableView.bottomAnchor.constraint(equalTo: bottomAnchor),
             tableView.trailingAnchor.constraint(equalTo: trailingAnchor),

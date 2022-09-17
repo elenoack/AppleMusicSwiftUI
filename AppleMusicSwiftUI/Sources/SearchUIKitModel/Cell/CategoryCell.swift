@@ -55,7 +55,7 @@ extension CategoryCell {
     
     private func configure() {
         addSubviewsForAutoLayout([imageView,
-                                 nameLabel])
+                                  nameLabel])
         
         NSLayoutConstraint.activate([
             imageView.topAnchor.constraint(equalTo: topAnchor),
@@ -86,6 +86,5 @@ extension CategoryCell {
     enum Strings {
         static let reuseID: String = "CategoryCell"
     }
-    
 }
 

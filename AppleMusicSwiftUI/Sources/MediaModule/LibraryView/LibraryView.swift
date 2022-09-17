@@ -33,6 +33,7 @@ struct LibraryView: View {
                             .foregroundColor(.red)
                     }))
             .navigationBarBackButtonHidden(true)
+            PlayerView()
         }
     }
 }

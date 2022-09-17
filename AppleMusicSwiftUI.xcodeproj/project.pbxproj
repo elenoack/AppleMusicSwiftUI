@@ -53,6 +53,7 @@
 		04B9B44028CF584D00F5A461 /* TrackInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B9B43F28CF584D00F5A461 /* TrackInfoView.swift */; };
 		04B9B44228CF622E00F5A461 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B9B44128CF622E00F5A461 /* ImageView.swift */; };
 		04DDF9CF28BB57CF00F81A86 /* MediaRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DDF9CE28BB57CF00F81A86 /* MediaRowView.swift */; };
+		04F5439828D5C34700870433 /* MainSearchUIKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5439728D5C34700870433 /* MainSearchUIKitView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,6 +105,7 @@
 		04B9B43F28CF584D00F5A461 /* TrackInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackInfoView.swift; sourceTree = "<group>"; };
 		04B9B44128CF622E00F5A461 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		04DDF9CE28BB57CF00F81A86 /* MediaRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaRowView.swift; sourceTree = "<group>"; };
+		04F5439728D5C34700870433 /* MainSearchUIKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSearchUIKitView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 		045293C328D31931007AA550 /* SearchUIKitModel */ = {
 			isa = PBXGroup;
 			children = (
+				04F5439728D5C34700870433 /* MainSearchUIKitView.swift */,
 				045293C428D31A2A007AA550 /* SearchUIKitView.swift */,
 				045293C628D32633007AA550 /* SearchViewController.swift */,
 				045293D028D36173007AA550 /* SearchDetailUIKitView.swift */,
@@ -515,6 +518,7 @@
 				0496339328CC75B400EBE357 /* HorizontalListView.swift in Sources */,
 				04539EE128CB735500D46156 /* SearchView.swift in Sources */,
 				04B9B43328CF337A00F5A461 /* MediaPlayerDetailView.swift in Sources */,
+				04F5439828D5C34700870433 /* MainSearchUIKitView.swift in Sources */,
 				04B9B43B28CF4F5300F5A461 /* TimeView.swift in Sources */,
 				0496339528CC75E400EBE357 /* HorizontalCellView.swift in Sources */,
 				04539EEE28CB909E00D46156 /* ModelData.swift in Sources */,

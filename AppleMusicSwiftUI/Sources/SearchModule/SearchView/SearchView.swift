@@ -28,9 +28,11 @@ struct SearchView: View {
                         AlbumSectionView(album: result) }
                 } else {
                     ForEach(modelData.albums.filter { $0.song.contains(searchText) || $0.author.contains(searchText)  }) { result in
-                        AlbumSectionView(album: result) }
+                        AlbumSectionView(album: result)
+                    }
                 }
             }
+            PlayerView()
         }
     }
 }
